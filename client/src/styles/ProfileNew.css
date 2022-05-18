@@ -1,0 +1,39 @@
+.grid{
+    display: inline-block;
+    grid-template-columns: repeat(2, 3fr);
+}
+
+.image{
+    border-radius: 20% ;
+    width: 250px;
+    height:250px;
+}
+
+.mt-4 {
+    background-color: lightblue;
+    color: black;
+}
+
+.my-4 {
+    color: black;
+
+}
+
+.display-4 {
+    color: black;
+    font-family: 'Times New Roman', cursive;
+    margin-right: 280px;
+    text-transform:capitalize;
+
+}
+
+.c2 {
+    color: black;
+    font-family: "Times New Roman", cursive;
+
+}
+
+.profile-info {
+    color: black;
+    font-family: "Times New Roman", cursive;
+}
