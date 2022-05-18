@@ -3,7 +3,22 @@ import cors from "cors"
 import mongoose from "mongoose"
 import Router from "./routes/routes.js"
 
+
 const app = express()
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "/client/build")))
+
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname, "client", "build", "index.html"))
+    })
+} else {
+    app.get("/", (req, res) => {
+        res.send("Api running")
+    })
+}
+
+
 
 app.use(cors())
 app.use(express.json())
