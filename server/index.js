@@ -31,6 +31,8 @@ mongoose.connect("mongodb+srv://v1s:admin@cluster0.wz14y.mongodb.net/myFirstData
 })
     .then(() => console.log('MongoDB connected'))
     .catch((err) => console.log(err))
-app.listen(8000, () => {
+app.listen(5000, () => {
     console.log("Cервер запущен на порту 8000")
+})
+
 })
