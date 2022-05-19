@@ -2,6 +2,11 @@ import express from "express"
 import cors from "cors"
 import mongoose from "mongoose"
 import Router from "./routes/routes.js"
+import dotenv from "dotenv"
+import path frpm "path"
+dotenv.config({ path: ".env" });
+const dbKey = process.env.REACT_APP_ACCESS_KEY;
+
 
 
 const app = express()
